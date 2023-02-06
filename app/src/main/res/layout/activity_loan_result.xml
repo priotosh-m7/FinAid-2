@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanResultActivity"
+    android:background="@drawable/backgroundgradientloan">
+
+    <RelativeLayout
+        android:id="@+id/Navbar"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:background="#1B1D29"
+
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/amita_bold"
+            android:text="FinAid"
+            android:textAlignment="center"
+            android:textColor="#F15F79"
+            android:textSize="60sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/backgroundgradientloanresult"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/abeezee"
+            android:paddingTop="10dp"
+            android:text="Your EMI is"
+            android:textAlignment="center"
+            android:textColor="@color/skin"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/amita_bold"
+            android:text="20000"
+            android:textAlignment="center"
+            android:textColor="#F15F79"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:paddingTop="10dp"
+                android:text="Loan Repayment Break-Up"
+                android:textAlignment="center"
+                android:textColor="@color/skin"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#40E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:padding="20dp"
+                android:text="Principal Amount"
+                android:textColor="@color/skin"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:padding="20dp"
+                android:text="20000"
+                android:textColor="#42275a"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#40E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:padding="20dp"
+                android:text="Period (in months)"
+                android:textColor="@color/skin"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:padding="20dp"
+                android:text="20000"
+                android:textColor="#42275a"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView113"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#40E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:padding="20dp"
+                android:text="Rate of Interest"
+                android:textColor="@color/skin"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:padding="20dp"
+                android:text="20000"
+                android:textColor="#42275a"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView114"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#40E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:padding="20dp"
+                android:text="Total Interest"
+                android:textColor="@color/skin"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:padding="20dp"
+                android:text="20000"
+                android:textColor="#42275a"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView115"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#40E4D5F5"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:padding="20dp"
+                android:text="Payable Amount"
+                android:textColor="@color/skin"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#734b6d"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:padding="20dp"
+                android:text="20000"
+                android:textColor="#F15F79"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
