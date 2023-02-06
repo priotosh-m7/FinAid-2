@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad4"
+
+    android:paddingTop="6dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundzwei"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="317dp"
+            android:layout_height="53dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignTop="@+id/loginButton"
+            android:layout_alignBottom="@+id/loginButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/grad"
+            android:elegantTextHeight="true"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/abeezee"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="317dp"
+            android:layout_height="53dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignTop="@id/signupButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="44dp"
+            android:background="@drawable/grad1"
+            android:elegantTextHeight="true"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/abeezee"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorLink="@color/purple_200"
+            android:textSize="30sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="44dp"
+
+
+            android:layout_marginTop="492dp"
+            android:layout_marginEnd="44dp"
+            android:fontFamily="@font/abeezee"
+
+            android:textAllCaps="false"
+
+
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_200"
+            android:textSize="34sp"
+            app:backgroundTint="@color/foregroundtest" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="604dp"
+            android:layout_marginEnd="44dp"
+            android:fontFamily="@font/abeezee"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_200"
+            android:textSize="34sp"
+            app:backgroundTint="@color/foregroundtest" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="326dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="461dp"
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_key_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/purple_200"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="326dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="548dp"
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="323dp"
+            android:layout_height="79dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="631dp"
+            android:fontFamily="@font/elsie_swash_caps"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

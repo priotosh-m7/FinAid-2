@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanActivity"
+    android:background="@drawable/backgroundgradientloan">
+
+
+    <RelativeLayout
+        android:id="@+id/Navbar"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:background="#1B1D29"
+
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/amita_bold"
+            android:text="FinAid"
+            android:textAlignment="center"
+            android:textColor="#F15F79"
+            android:textSize="60sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Principal Amount"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Period (in months)"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="392dp"
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Rate of Interest"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="414dp"
+        android:layout_height="68dp"
+
+        android:backgroundTint="#B24592"
+        android:fontFamily="@font/abeezee"
+
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3"
+        app:layout_constraintVertical_bias="0.449" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

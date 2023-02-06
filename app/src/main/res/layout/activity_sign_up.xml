@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/grad4">
+
+    <RelativeLayout
+        android:id="@+id/signuprelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginpagebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-182dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="233dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="-2dp"
+            android:fontFamily="@font/elsie_swash_caps"
+            android:text="SignUp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="163dp"
+            android:layout_marginEnd="40dp"
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="315dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="382dp"
+            android:layout_marginEnd="40dp"
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_key_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/purple_200"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="315dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="453dp"
+            android:layout_marginEnd="40dp"
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_key_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Re-Enter password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/purple_200"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="40dp"
+            android:background="#99E4D5F5"
+
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Enter your phone no"
+            android:inputType="phone"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editDateofBirth"
+            android:layout_width="231dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="307dp"
+            android:layout_marginEnd="140dp"
+            android:background="#99E4D5F5"
+
+            android:drawableLeft="@drawable/ic_baseline_edit_calendar_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Enter your date of birth"
+            android:inputType="date"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/passwordmatch"
+            android:layout_width="156dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+
+            android:layout_marginTop="517dp"
+            android:layout_marginEnd="43dp"
+            android:fontFamily="@font/abeezee"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/purple_200"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="328dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginEnd="40dp"
+            android:background="#99E4D5F5"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:text="Check this to proceed"
+            android:textColorHighlight="@color/primarypurple"
+            android:textColorLink="@color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupButton"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="624dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/abeezee"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_200"
+            android:textSize="34sp"
+            app:backgroundTint="@color/foregroundtest" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="158dp"
+            android:layout_height="53dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignTop="@+id/loginButton"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/grad"
+            android:elegantTextHeight="true"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/abeezee"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignTop="@id/signupButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/grad1"
+            android:elegantTextHeight="true"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/abeezee"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorLink="@color/purple_200"
+            android:textSize="30sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+
+
+            android:layout_marginTop="708dp"
+            android:layout_marginEnd="39dp"
+            android:fontFamily="@font/abeezee"
+
+            android:textAllCaps="false"
+
+
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_200"
+            android:textSize="34sp"
+            app:backgroundTint="@color/foregroundtest" />
+
+        <EditText
+            android:id="@+id/editTextFName"
+            android:layout_width="166dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="90dp"
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+
+            android:fontFamily="@font/abeezee"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextLName"
+            android:layout_width="166dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="40dp"
+
+            android:background="#99E4D5F5"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="30px"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="105dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="307dp"
+            android:layout_marginEnd="34dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:backgroundTint="@color/navy_blue_100"
+            android:fontFamily="@font/abeezee"
+            android:text="Calender"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

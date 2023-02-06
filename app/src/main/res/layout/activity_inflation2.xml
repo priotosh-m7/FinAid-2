@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InflationActivity2"
+    android:background="@drawable/backgroundgradientinflation">
+
+    <RelativeLayout
+        android:id="@+id/Navbar"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:background="#1B1D29"
+
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/amita_bold"
+            android:text="FinAid"
+            android:textAlignment="center"
+            android:textColor="#f5bd05"
+            android:textSize="60sp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Investment Amount"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Inflation Rate"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F15F79"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Return on Investment rate"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+
+        android:background="@color/backgroundLight"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="Enter Tenure in Years"
+        android:inputType="number"
+
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Navbar"
+        app:layout_constraintVertical_bias="0.832" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="414dp"
+        android:layout_height="68dp"
+
+        android:backgroundTint="#fc8032"
+        android:fontFamily="@font/abeezee"
+
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColorHighlight="#F15F79"
+        android:textColorLink="#F15F79"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3"
+        app:layout_constraintVertical_bias="0.76" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
