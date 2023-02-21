@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradientinflation"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InflationResult">
+        <RelativeLayout
+            android:id="@+id/Navbar"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:background="#1B1D29"
+
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:text="FinAid"
+                android:textAlignment="center"
+                android:textColor="#f5bd05"
+                android:textSize="60sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/backgroundgradientinflationresult"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Navbar"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/abeezee"
+                android:paddingTop="10dp"
+                android:text="Investment Returns"
+                android:textAlignment="center"
+                android:textColor="@color/indigo"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/amita_bold"
+                android:text="20000"
+                android:textAlignment="center"
+                android:textColor="#f5bd05"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/abeezee"
+                    android:paddingTop="10dp"
+                    android:text="Investment Evaluation"
+                    android:textAlignment="center"
+                    android:textColor="@color/indigo"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView111"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#40E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/abeezee"
+                    android:padding="20dp"
+                    android:text="Principal Amount"
+                    android:textColor="@color/indigo"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#75E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/amita_bold"
+                    android:padding="20dp"
+                    android:text="20000"
+                    android:textColor="#42275a"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#40E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/abeezee"
+                    android:padding="20dp"
+                    android:text="Inflation adj. Amount"
+                    android:textColor="@color/indigo"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#75E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/amita_bold"
+                    android:padding="20dp"
+                    android:text="20000"
+                    android:textColor="#42275a"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView113"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#40E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/abeezee"
+                    android:padding="20dp"
+                    android:text="Return on Investment"
+                    android:textColor="@color/indigo"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#75E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/amita_bold"
+                    android:padding="20dp"
+                    android:text="20000"
+                    android:textColor="#42275a"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView115"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#40E4D5F5"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/abeezee"
+                    android:padding="20dp"
+                    android:text="Net P/L"
+                    android:textColor="@color/indigo"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgroundgradientinflationresult"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/amita_bold"
+                    android:padding="20dp"
+                    android:text="20000"
+                    android:textColor="#f5bd05"
+                    android:textColorHighlight="#F15F79"
+                    android:textColorLink="#F15F79"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="414dp"
+                android:layout_height="68dp"
+
+                android:backgroundTint="#fc8032"
+                android:fontFamily="@font/abeezee"
+
+                android:text="Return Home"
+                android:textAllCaps="false"
+                android:textColorHighlight="#F15F79"
+                android:textColorLink="#F15F79"
+                android:textSize="25sp"
+                app:cornerRadius="30dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

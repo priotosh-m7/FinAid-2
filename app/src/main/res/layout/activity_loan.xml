@@ -85,7 +85,7 @@
         android:ems="10"
         android:fontFamily="@font/abeezee"
         android:hint="Enter Rate of Interest"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:paddingLeft="20dp"
         android:textColor="@color/black"
         android:textColorHighlight="#F15F79"

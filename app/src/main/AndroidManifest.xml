@@ -13,6 +13,27 @@
         android:theme="@style/Theme.FinAid"
         tools:targetApi="31">
         <activity
+            android:name=".GraphicPrimitives"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InterestResult"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InflationResult"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".LoanResultActivity"
             android:exported="false">
             <meta-data

@@ -10,7 +10,7 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    Button button ,gp;
     TextView textView;
     TextView textView2;
     @Override
@@ -19,11 +19,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = findViewById(R.id.gsbutton);
+        gp = findViewById(R.id.gpbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent);
+            }
+        });
+       gp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this,GraphicPrimitives.class);
+                startActivity(intent1);
 
             }
         });

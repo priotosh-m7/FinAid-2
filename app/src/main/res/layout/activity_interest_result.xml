@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundgradientloan"
+    android:background="@drawable/backgroundgradientinterest"
     xmlns:android="http://schemas.android.com/apk/res/android">
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoanResultActivity"
-    android:background="@drawable/backgroundgradientloan">
+    tools:context=".InterestResult">
 
     <RelativeLayout
         android:id="@+id/Navbar"
@@ -35,7 +37,7 @@
             android:fontFamily="@font/amita_bold"
             android:text="FinAid"
             android:textAlignment="center"
-            android:textColor="#F15F79"
+            android:textColor="#02AABD"
             android:textSize="60sp" />
     </RelativeLayout>
 
@@ -43,7 +45,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:background="@drawable/backgroundgradientloanresult"
+        android:background="@drawable/backgroundgradientinterestresult"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +61,7 @@
             android:elegantTextHeight="true"
             android:fontFamily="@font/abeezee"
             android:paddingTop="10dp"
-            android:text="Your EMI is"
+            android:text="Total Amount"
             android:textAlignment="center"
             android:textColor="@color/skin"
             android:textSize="24sp" />
@@ -72,7 +74,7 @@
             android:fontFamily="@font/amita_bold"
             android:text="20000"
             android:textAlignment="center"
-            android:textColor="#F15F79"
+            android:textColor="#fddb92"
             android:textSize="60sp" />
     </LinearLayout>
 
@@ -103,9 +105,9 @@
                 android:elegantTextHeight="true"
                 android:fontFamily="@font/abeezee"
                 android:paddingTop="10dp"
-                android:text="Loan Repayment Break-Up"
+                android:text="Investment Break-Up"
                 android:textAlignment="center"
-                android:textColor="@color/skin"
+                android:textColor="#b490ca"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -127,7 +129,7 @@
                 android:fontFamily="@font/abeezee"
                 android:padding="20dp"
                 android:text="Principal Amount"
-                android:textColor="@color/skin"
+                android:textColor="#b490ca"
                 android:textColorHighlight="#F15F79"
                 android:textColorLink="#F15F79"
                 android:textSize="22sp" />
@@ -163,7 +165,7 @@
                 android:fontFamily="@font/abeezee"
                 android:padding="20dp"
                 android:text="Period (in months)"
-                android:textColor="@color/skin"
+                android:textColor="#b490ca"
                 android:textColorHighlight="#F15F79"
                 android:textColorLink="#F15F79"
                 android:textSize="22sp" />
@@ -199,7 +201,7 @@
                 android:fontFamily="@font/abeezee"
                 android:padding="20dp"
                 android:text="Rate of Interest"
-                android:textColor="@color/skin"
+                android:textColor="#b490ca"
                 android:textColorHighlight="#F15F79"
                 android:textColorLink="#F15F79"
                 android:textSize="22sp" />
@@ -235,7 +237,7 @@
                 android:fontFamily="@font/abeezee"
                 android:padding="20dp"
                 android:text="Total Interest"
-                android:textColor="@color/skin"
+                android:textColor="#b490ca"
                 android:textColorHighlight="#F15F79"
                 android:textColorLink="#F15F79"
                 android:textSize="22sp" />
@@ -270,8 +272,8 @@
                 android:elegantTextHeight="true"
                 android:fontFamily="@font/abeezee"
                 android:padding="20dp"
-                android:text="Payable Amount"
-                android:textColor="@color/skin"
+                android:text="Total Amount"
+                android:textColor="#b490ca"
                 android:textColorHighlight="#F15F79"
                 android:textColorLink="#F15F79"
                 android:textSize="22sp" />
@@ -281,12 +283,12 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#734b6d"
+                android:background="#b490ca"
                 android:elegantTextHeight="true"
                 android:fontFamily="@font/amita_bold"
                 android:padding="20dp"
                 android:text="20000"
-                android:textColor="#F15F79"
+                android:textColor="#fddb92"
                 android:textColorHighlight="#F15F79"
                 android:textColorLink="#F15F79"
                 android:textSize="22sp" />
@@ -299,7 +301,7 @@
         android:layout_width="414dp"
         android:layout_height="68dp"
 
-        android:backgroundTint="#B24592"
+        android:backgroundTint="#b490ca"
         android:fontFamily="@font/abeezee"
 
         android:text="Return Home"
