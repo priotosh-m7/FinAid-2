@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/backgroundgradientloan"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoanResultActivity"
@@ -77,7 +73,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="540dp"
         android:orientation="vertical"
@@ -294,26 +289,4 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="414dp"
-        android:layout_height="68dp"
-
-        android:backgroundTint="#B24592"
-        android:fontFamily="@font/abeezee"
-
-        android:text="Return Home"
-        android:textAllCaps="false"
-        android:textColorHighlight="#F15F79"
-        android:textColorLink="#F15F79"
-        android:textSize="25sp"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.449" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
